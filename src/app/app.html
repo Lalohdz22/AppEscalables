@@ -1,0 +1,19 @@
+
+<h1> El directorio tinene: {{ usuariosTotales() }} usuarios</h1>
+<app-controls (orderByIdClick)="orderById()" (orderByNameClick)="orderByName()" (reverse)="reverse()"></app-controls>
+
+<div class="container">
+
+  @for (user  of users(); track $index) {
+  
+    <app-user-card [user]="user" (eliminaUsuario)="elminaUsuario($event)"></app-user-card>
+
+  }@empty {
+
+    <p>No hay usuarios en el directorio</p>
+
+  }
+
+</div>
+
+
