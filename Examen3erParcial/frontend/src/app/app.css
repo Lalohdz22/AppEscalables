@@ -1,0 +1,5 @@
+.formulario { display: flex; gap: 8px; margin-bottom: 20px; }
+input { padding: 6px; }
+.lista { display: grid; gap: 12px; }
+.card { border: 1px solid #ccc; border-radius: 8px; padding: 12px; }
+.card h3 { margin: 0 0 6px; }
